@@ -1,0 +1,35 @@
+{
+	"name": "bean-script",
+	"displayName": "Bean Script Language Highlighting",
+	"description": "like coffee beans",
+	"publisher": "mageowl",
+	"version": "0.1.2",
+	"engines": {
+		"vscode": "^1.87.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "beanscript",
+				"aliases": [
+					"Bean Script",
+					"beanscript"
+				],
+				"extensions": [
+					".bean"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "beanscript",
+				"scopeName": "source.bean-script",
+				"path": "./syntaxes/beanscript.tmLanguage.json"
+			}
+		]
+	}
+}

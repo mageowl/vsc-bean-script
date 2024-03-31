@@ -1,0 +1,134 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Bean Script",
+	"patterns": [
+		{
+			"include": "#builtins"
+		},
+		{
+			"include": "#functions"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#names"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#punctuation"
+		}
+	],
+	"repository": {
+		"functions": {
+			"name": "entity.name.function.beanscript",
+			"match": "\\b[\\w_]+(?=\\()"
+		},
+		"builtins": {
+			"patterns": [
+				{
+					"name": "keyword.control.beanscript",
+					"match": "\\b((if|else_if|repeat|match|return|pass|body)(?=\\()|(else|while|return|pass|body)\\b)"
+				},
+				{
+					"name": "storage.type.beanscript",
+					"match": "\\b(let|const|fn|submod|use)(?=\\()"
+				},
+				{
+					"name": "storage.modifier.beanscript",
+					"match": "\\bexport(?=\\()"
+				},
+				{
+					"name": "support.function.short.beanscript",
+					"match": "\\b(rand|args)\\b"
+				},
+				{
+					"name": "support.function.name.beanscript",
+					"match": "\\b(del|call|exists)(?=\\()"
+				},
+				{
+					"name": "support.function.scope.beanscript",
+					"match": "\\b(p|include)(?=\\()"
+				},
+				{
+					"name": "support.function.interface.beanscript",
+					"match": "\\b(print|error|sleep)(?=\\()"
+				},
+				{
+					"name": "support.function.debug.beanscript",
+					"match": "\\b__debug\\b"
+				},
+				{
+					"name": "support.function.math.beanscript",
+					"match": "\\b(add|sub|mul|div|pow|abs|sin|cos|tan|atan|sqrt|round|floor|ceil)(?=\\()"
+				},
+				{
+					"name": "support.function.string.beanscript",
+					"match": "\\b(size|split)(?=\\()"
+				},
+				{
+					"name": "support.function.type.beanscript",
+					"match": "\\b(str|num|name|type)(?=\\()"
+				},
+				{
+					"name": "support.function.collection.beanscript",
+					"match": "\\b(list|map)(?=\\()"
+				},
+				{
+					"name": "support.function.logic.beanscript",
+					"match": "\\b(eq|lt|gt|not|and|or)(?=\\()"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.beanscript",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.beanscript",
+					"match": "\\\\."
+				}
+			]
+		},
+		"numbers": {
+			"name": "constant.numeric.decimal.beanscript",
+			"match": "(?<!\\.)\\b\\d+(\\.\\d)?"
+		},
+		"names": {
+			"name": "entity.name.tag.beanscript",
+			"begin": "<",
+			"end": ">"
+		},
+		"constants": {
+			"name": "constant.language.boolean.beanscript",
+			"match": "\\b(true|false|none)\\b"
+		},
+		"punctuation": {
+			"patterns": [
+				{
+					"name": "punctuation.brackets.round.beanscript",
+					"match": "[()]"
+				},
+				{
+					"name": "punctuation.brackets.curly.beanscript",
+					"match": "[{}]"
+				},
+				{
+					"name": "keyword.operator.access.beanscript",
+					"match": "\\."
+				},
+				{
+					"name": "keyword.operator.body.beanscript",
+					"match": ":"
+				}
+			]
+		}
+	},
+	"scopeName": "source.bean-script"
+}
