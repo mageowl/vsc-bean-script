@@ -120,6 +120,10 @@
 					"match": "[{}]"
 				},
 				{
+					"name": "punctuation.comma.beanscript",
+					"match": "[{}]"
+				},
+				{
 					"name": "keyword.operator.access.beanscript",
 					"match": "\\."
 				},
