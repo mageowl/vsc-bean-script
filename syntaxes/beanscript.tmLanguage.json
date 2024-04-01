@@ -44,43 +44,43 @@
 					"match": "\\bexport(?=\\()"
 				},
 				{
-					"name": "support.function.short.beanscript",
+					"name": "support.function.beanscript.short",
 					"match": "\\b(rand|args)\\b"
 				},
 				{
-					"name": "support.function.name.beanscript",
+					"name": "support.function.beanscript.name",
 					"match": "\\b(del|call|exists)(?=\\()"
 				},
 				{
-					"name": "support.function.scope.beanscript",
+					"name": "support.function.beanscript.scope",
 					"match": "\\b(p|include)(?=\\()"
 				},
 				{
-					"name": "support.function.interface.beanscript",
+					"name": "support.function.beanscript.interface",
 					"match": "\\b(print|error|sleep)(?=\\()"
 				},
 				{
-					"name": "support.function.debug.beanscript",
+					"name": "support.function.beanscript.debug",
 					"match": "\\b__debug\\b"
 				},
 				{
-					"name": "support.function.math.beanscript",
+					"name": "support.function.beanscript.math",
 					"match": "\\b(add|sub|mul|div|pow|abs|sin|cos|tan|atan|sqrt|round|floor|ceil)(?=\\()"
 				},
 				{
-					"name": "support.function.string.beanscript",
+					"name": "support.function.beanscript.string",
 					"match": "\\b(size|split)(?=\\()"
 				},
 				{
-					"name": "support.function.type.beanscript",
+					"name": "support.function.beanscript.type",
 					"match": "\\b(str|num|name|type)(?=\\()"
 				},
 				{
-					"name": "support.function.collection.beanscript",
+					"name": "support.function.beanscript.collection",
 					"match": "\\b(list|map)(?=\\()"
 				},
 				{
-					"name": "support.function.logic.beanscript",
+					"name": "support.function.beanscript.logic",
 					"match": "\\b(eq|lt|gt|not|and|or)(?=\\()"
 				}
 			]
