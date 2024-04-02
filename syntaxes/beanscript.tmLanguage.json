@@ -3,6 +3,9 @@
 	"name": "Bean Script",
 	"patterns": [
 		{
+			"include": "#comments"
+		},
+		{
 			"include": "#builtins"
 		},
 		{
