@@ -25,6 +25,19 @@
 		}
 	],
 	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.beanscript",
+					"match": "\\/\\/.*"
+				},
+				{
+					"name": "comment.block.beanscript",
+					"begin": "\\/\\*",
+					"end": "\\*\\/"
+				}
+			]
+		},
 		"functions": {
 			"name": "entity.name.function.beanscript",
 			"match": "\\b[\\w_]+(?=\\()"
