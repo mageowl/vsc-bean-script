@@ -68,6 +68,10 @@
 					"match": "\\b(del|call|exists)(?=\\()"
 				},
 				{
+					"name": "support.function.beanscript.const",
+					"match": "\\b(self|super)(?=\\()"
+				},
+				{
 					"name": "support.function.beanscript.scope",
 					"match": "\\b(p|include)(?=\\()"
 				},
