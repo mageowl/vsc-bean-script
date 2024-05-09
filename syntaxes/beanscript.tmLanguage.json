@@ -49,7 +49,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.beanscript",
-					"match": "\\b((if|else_if|repeat|match|return|pass|body)(?=\\()|(else|while|return|pass|body)\\b)"
+					"match": "\\b((if|else_if|repeat|match|return|pass|body|ifv)(?=\\()|(else|while|return|pass|body)\\b)"
 				},
 				{
 					"name": "storage.type.beanscript",
@@ -92,7 +92,7 @@
 					"match": "\\b(size|split)(?=\\()"
 				},
 				{
-					"name": "support.function.beanscript.type",
+					"name": "language.variable.beanscript.type",
 					"match": "\\b(str|num|name|type)(?=\\()"
 				},
 				{
@@ -118,7 +118,7 @@
 		},
 		"numbers": {
 			"name": "constant.numeric.decimal.beanscript",
-			"match": "(?<!\\.)\\b\\d+(\\.\\d)?"
+			"match": "(?<!\\.)\\b\\d+(\\.\\d+)?"
 		},
 		"names": {
 			"name": "entity.name.tag.beanscript",
