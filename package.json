@@ -3,7 +3,7 @@
 	"displayName": "Bean Script Language Highlighting",
 	"description": "like coffee beans",
 	"publisher": "mageowl",
-	"version": "0.2.0",
+	"version": "0.2.7",
 	"repository": "mageowl/vsc-bean-script",
 	"engines": {
 		"vscode": "^1.87.0"
